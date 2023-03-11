@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    background-color: rgb(67, 67, 238);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+.menulist{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.menuitem{
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+.submenu-item{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 37px;
+    background-color:rgb(67, 67, 238) ;
+    display: none;
+}
+.menulist .serv:hover{
+    background-color: rgb(4, 4, 65);
+    color: white;
+    width: 90px;
+
+}
+.menuitem:hover .submenu-item{
+    display: block;
+}
+.moreee{
+    position: relative;
+}
+.submenu-item .mor:hover{
+    color: white;
+    background-color: rgb(4, 4, 65);
+}
+.childmenu-item{
+    display: none;
+    position: absolute;
+    background-color: rgb(67, 67, 238);
+    color: white;
+    left: 100%;
+    top: 0;
+
+}
+.moreee:hover .childmenu-item{
+    display: block;
+}
+.menu-itembtn button{
+  margin-right: 10px;
+  padding: 5px;
+}
